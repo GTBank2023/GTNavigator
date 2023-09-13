@@ -1,0 +1,59 @@
+/* Global Styles */
+body {
+    font-family: Montserrat, Frutiger;
+    background-color: #FFFFFF;
+    margin: 2cm;
+    padding: 2cm;
+    color: #FFA500;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #FFA500;
+}
+
+/* Links */
+a {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #FFFFFF ;
+    color: #FFA500;
+    padding: 10px 0;
+}
+
+/* Navigation Menu */
+nav {
+    text-align:  center ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+/* Banner Section Styles */
+#banner-section {
+    background-image: url('path/to/your-image.jpg');
+    background-size: cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
