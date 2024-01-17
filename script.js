@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const utterance = new SpeechSynthesisUtterance(message);
         window.speechSynthesis.speak(utterance);
     }
-}
+})
     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
     videoElement.srcObject = stream;
     await videoElement.play();
@@ -495,7 +495,7 @@ const benefits = {
     // You will need to implement the textToSpeech function using your preferred TTS library.
     // This function should take the message as input and read it aloud.
   
-  function textToSpeech(message) {
+  async function textToSpeech(message) {
        // Function to perform text-to-speech
 function textToSpeech(message) {
   
@@ -543,10 +543,10 @@ relationshipDeskDescription.voice = voices[1]; // Use the desired voice index fo
 window.speechSynthesis.speak(lobbyDescription); // Read out lobby description
 window.speechSynthesis.speak(relationshipDeskDescription); // Read out relationship desk description
 window.speechSynthesis.speak(OperationsAreaDescription); // Read out Operations Area description
-window.speechSynthesis.speak(CustomerInformationService
+window.speechSynthesis.speak(CustomerInformationService);
 
     }
-});
+};
 
 
 
@@ -564,7 +564,7 @@ window.speechSynthesis.speak(CustomerInformationService
         .catch((error) => {
             console.error('Error:', error);
         });
-});
+};
 
 
     fetch('https://drive.google.com/file/d/1uNDyaihSkeOFFU3zAivZByG4pa05fGMc')
@@ -743,7 +743,7 @@ try {
 
 
 
-    function predictFromVideo() {
+    async function predictFromVideo() {
         ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
         const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const tensor = tf.browser.fromPixels(imgData).expandDims();
@@ -764,9 +764,9 @@ try {
         videoElement.play();
         detectObjects();
     });
-});
+};
 
 
 document.addEventListener('DOMContentLoaded', () => {
     launchSystem();
-});
+})};
